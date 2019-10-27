@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="two.css">
+  </head>
+  <body>
+
+    <h3>Phone Directory</h3>
+    <div class="container">
+      <input type="text" id="name" placeholder="name" maxlength="20">
+      <input type="number" id="mobile" placeholder="mobile" maxlength="10">
+      <input type="email" id="email" placeholder="email" maxlength="40">
+      <button id="addcontact" type="button" name="button">Add Contact</button>
+    </div>
+
+    <div class="search">
+      Search contact by Mobile No: <input type="text" onkeyup="searchMobile()" id="inpsearch">
+    </div>
+
+    <div class="contact">
+      <h4>Contacts Summary</h4>
+      <table id="contact">
+        <thead>
+          <th>Name</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </thead>
+        <tbody id="tablecontact">
+          <!-- <tr>
+            <td>Admin</td>
+            <td>999999999</td>
+            <td>admin@mail.com</td>
+          </tr> -->
+        </tbody>
+      </table>
+      <div id="notfound">
+        Data Not Found
+      </div>
+    </div>
+
+    <script src="two.js"></script>
+
+  </body>
+</html>
